@@ -1,0 +1,38 @@
+package giris;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class class3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a,b,c;
+        System.out.println("1.sayıyı giriniz: ");
+        a = input.nextInt();
+        System.out.println("2.sayıyı giriniz: ");
+        b = input.nextInt();
+        System.out.println("3.sayıyı giriniz: ");
+        c = input.nextInt();
+        if(a>b && a>c){
+            if(b>c){
+            System.out.println("En büyük sayı: "+a+" "+"\n 2.sayı: "+b+"\n 3.sayı: "+c);
+
+        }else{
+                System.out.println("En büyük sayı: "+a+" "+"\n 2.sayı: "+c+"\n 3.sayı: "+b);
+            }}
+        else
+        if(b>a && b>c){
+            if(a>c){
+                System.out.println("En büyük sayı: "+b+" "+"\n 2.sayı: "+a+"\n 3.sayı: "+c);
+
+            }else{
+                System.out.println("En büyük sayı: "+b+" "+"\n 2.sayı: "+c+"\n 3.sayı: "+a);
+            }}
+        if(c>b && c>a){
+            if(b>a){
+                System.out.println("En büyük sayı: "+c+" "+"\n 2.sayı: "+b+"\n 3.sayı: "+a);
+
+            }else{
+                System.out.println("En büyük sayı: "+c+" "+"\n 2.sayı: "+a+"\n 3.sayı: "+b);
+            }}
+
+    }}
+
